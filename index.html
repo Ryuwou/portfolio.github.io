@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Kenza Hidouche</title>
+
+  <!-- Google Fonts + FontAwesome -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+
+  <!-- Particles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Particules en arrière-plan -->
+  <div id="particles-js"></div>
+
+  <!-- Bouton Dark/Light (optionnel) -->
+  <button id="themeToggle" class="theme-toggle">
+    <i class="fas fa-adjust"></i>
+  </button>
+
+  <!-- Navigation (fixe en haut) -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Kenza Hidouche</div>
+      <ul class="nav-links">
+        <li><a href="#home" data-key="home">Accueil</a></li>
+        <li><a href="#about" data-key="about">À propos</a></li>
+        <li><a href="#skills" data-key="skills">Compétences</a></li>
+        <li><a href="#projects" data-key="projects">Projets</a></li>
+        <li><a href="#contact" data-key="contact">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <button id="langToggle" class="lang-toggle">FR</button>
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+      </div>
+    </nav>
+  </header>
+  
+  
+  
+
+  <!-- Section Hero (Accueil) -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="kenza-glitch">Kenza Hidouche</h1>
+      <p class="tagline">Terminal Sti2d</p>
+      <a href="#about" class="cta-btn">Découvrir</a>
+    </div>
+  </section>
+
+ <!-- Section À propos -->
+<section id="about" class="hidden">
+  <h2 data-key="aboutTitle">À propos de moi</h2>
+  <p data-key="aboutText">
+    Depuis mon plus jeune âge, je suis passionné par l'informatique. Les jeux vidéo ont été l'une de mes premières portes d'entrée vers un univers où l'informatique et la technologie se rassemble. Au fil des années, j'ai compris que l'informatique est bien plus qu'un simple outil, c'est l'avenir. L'informatique est devenu notre quotidien, que ce soit à travers les médias, la technologie ou les interactions numériques, je crois fermement que l'informatique est la clé qui nous permet de progresser.
+  </p>
+</section>
+
+
+  <!-- Section Compétences -->
+<section id="skills" class="hidden">
+    <h2>Mes Compétences</h2>
+    <div class="skill-list">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js"></i>
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-code"></i>
+        <h3>C#</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Section Projets -->
+<section id="projects" class="hidden">
+  <h2>Mes Projets</h2>
+  <div class="project-list">
+      <div class="project-card">
+          <h3>Hexapode</h3>
+          <p>Robot Hexapode conçu pour explorer, analyser le terrain et franchir des obstacles.</p>
+          <a href="https://www.canva.com/design/DAGEdxudA_Q/z59n-F2l0iqGifleW5QAvw/edit" class="discover-btn">Découvrir</a>
+      </div>
+      <div class="project-card">
+          <h3>Portfolio Animé</h3>
+          <p>Site web interactif utilisant des animations CSS et JavaScript pour une expérience immersive.</p>
+          <a href="lien_du_projet_2" class="discover-btn">Découvrir</a>
+      </div>
+      <div class="project-card">
+          <h3>//</h3>
+          <p>//</p>
+          <a href="lien_du_projet_3" class="discover-btn">Découvrir</a>
+      </div>
+  </div>
+</section>
+
+
+ <!-- Section Contact -->
+<section id="contact" class="hidden">
+    <h2>Contactez-moi</h2>
+    <p>Vous pouvez me joindre via :</p>
+    <ul class="contact-info">
+        <li><i class="fas fa-envelope"></i> Email : <a href="Kenza.hidouche.scol@gmail.com">Kenza.hidouche.scol@gmail.com</a></li>
+        <li><i class="fas fa-phone"></i> Téléphone : <a href="tel:+33 7 83 76 90 40">+33 7 83 76 90 40</a></li>
+
+    </ul>
+</section>
+
+
+  <!-- Pied de page -->
+  <footer>
+    <p>© 2025 Kenza Hidouche - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
