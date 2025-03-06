@@ -420,3 +420,24 @@ border: 2px solid #666;
 .light-mode .theme-toggle:hover {
 background: #ccc;
 }
+/* Styles par défaut pour grands écrans /
+body {
+  font-size: 18px;
+  margin: 20px;
+}
+
+/ Adapter le style pour les écrans de moins de 768px (tablettes et mobiles) /
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    margin: 10px;
+  }
+}
+
+/ Adapter le style pour les très petits écrans (téléphones) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    margin: 5px;
+  }
+} 
