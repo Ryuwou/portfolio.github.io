@@ -1,11 +1,11 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* POLICE & COULEURS */
+
 body {
   font-family: 'Orbitron', sans-serif;
   background: #0f0f0f;
@@ -14,7 +14,7 @@ body {
   transition: background 0.5s, color 0.5s;
 }
 
-/* PARTICLES BACKGROUND */
+
 #particles-js {
   position: fixed;
   width: 100%;
@@ -22,7 +22,7 @@ body {
   z-index: -1;
 }
 
-/* BOUTONS (THÈME & LANGUE) */
+
 .theme-toggle, .lang-toggle {
   background: transparent;
   color: #00ffcc;
@@ -37,7 +37,7 @@ body {
   color: #111;
 }
 
-/* NAVIGATION */
+
 header {
   position: fixed;
   top: 0;
@@ -62,7 +62,7 @@ header ul li a:hover {
   color: #fff;
 }
 
-/* SECTIONS GÉNÉRALES */
+
 section {
   min-height: 100vh;
   padding: 100px 20px;
@@ -77,7 +77,7 @@ section {
   transition: all 0.6s ease-out;
 }
 
-/* HERO */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -121,7 +121,7 @@ section {
   color: #111;
 }
 
-/* SECTION À PROPOS */
+
 #about {
   text-align: center;
   max-width: 800px;
@@ -129,7 +129,7 @@ section {
   line-height: 1.6;
 }
 
-/* SECTION COMPÉTENCES */
+
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -153,7 +153,7 @@ section {
   margin-bottom: 10px;
 }
 
-/* SECTION PROJETS */
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -196,17 +196,17 @@ section {
   color: #111;
 }
 
-/* SECTION CONTACT : augmenter la taille du texte */
+
 #contact .contact-info p,
 #contact .contact-info li {
-  font-size: 28px; /* Augmentation de la taille du texte */
+  font-size: 28px; 
   color: #fff;
   line-height: 1.6;
   margin: 10px 0;
 }
 
 #contact .contact-info a {
-  font-size: 28px; /* Ajustement de la taille des liens */
+  font-size: 28px; 
   color: #00ffcc;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -218,12 +218,12 @@ section {
 }
 
 #contact h2 {
-  font-size: 36px; /* Taille du texte à ajuster */
+  font-size: 36px; 
 }
 
 
 
-/* PIED DE PAGE */
+
 footer {
   text-align: center;
   padding: 20px;
@@ -232,7 +232,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* LIGHT MODE */
+
 .light-mode {
   background-color: #f4f4f4;
   color: #222;
@@ -260,17 +260,17 @@ footer {
   background: #ccc;
 }
 
-/* Changer la couleur des titres et accents */
+
 .light-mode h2,
 .light-mode .kenza-glitch,
 .light-mode .logo,
 .light-mode .nav-links li a,
 .light-mode .cta-btn,
 .light-mode .discover-btn {
-  color: #000; /* Noir au lieu de #00ffcc */
+  color: #000; 
 }
 
-/* Bordures et effets en noir */
+
 .light-mode .theme-toggle, 
 .light-mode .lang-toggle, 
 .light-mode .cta-btn, 
@@ -284,19 +284,18 @@ footer {
   color: #fff;
 }
 
-/* Changer la couleur du trait sous les titres */
 .light-mode h2::after {
   background-color: #000;
 }
 
-/* Changer la couleur des cartes */
+
 .light-mode .skill-card,
 .light-mode .project-card {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* MEDIA QUERIES */
+
 @media (max-width: 768px) {
   header {
     padding: 10px 20px;
@@ -337,7 +336,7 @@ footer {
     display: block;
 }
 
-/* Styles pour mobile */
+
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none;
@@ -366,8 +365,8 @@ footer {
 }
 
 #contact .contact-info ul {
-  list-style: none; /* Supprime les puces */
-  padding: 0; /* Enlève l’indentation */
+  list-style: none; 
+  padding: 0; 
 }
 
 #contact .contact-info ul {
@@ -376,48 +375,48 @@ footer {
 #contact .contact-info li {
   display: flex;
   align-items: center;
-  gap: 5px; /* Ajuste l'espace entre l'icône et le texte */
+  gap: 5px; 
 }
 
 #contact .contact-info p,
 #contact .contact-info li,
 #contact .contact-info a {
-  font-size: 20px; /* Augmente la taille du texte */
-  font-weight: bold; /* Optionnel : met en gras */
+  font-size: 20px; 
+  font-weight: bold; 
 }
 
 #contact .contact-info i {
-  font-size: 24px; /* Augmente la taille des icônes */
+  font-size: 24px; 
 }
 
 #contact .contact-info {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre le contenu */
-  gap: 15px; /* Augmente l'espace entre chaque élément */
+  align-items: center; 
+  gap: 15px; 
 }
 
 section h2 {
-  font-size: 2.5rem; /* Augmente la taille du titre */
-  text-transform: uppercase; /* Met en majuscules (optionnel) */
-  text-align: center; /* Centre le titre */
-  margin-bottom: 20px; /* Ajoute de l'espace sous le titre */
-  letter-spacing: 2px; /* Espacement entre les lettres pour plus d’impact */
-  position: relative; /* Permet d'ajouter un effet décoratif */
+  font-size: 2.5rem; 
+  text-transform: uppercase; 
+  text-align: center; 
+  margin-bottom: 20px; 
+  letter-spacing: 2px; 
+  position: relative; 
 }
 
-/* Ajout d'un soulignement stylisé sous chaque titre */
+
 section h2::after {
   content: '';
   display: block;
   width: 80px;
   height: 4px;
   background: #00ffcc;
-  margin: 10px auto 0; /* Espace au-dessus et centrage */
+  margin: 10px auto 0; 
   border-radius: 2px;
 }
 
-/* Style de base du titre */
+
 section h2 {
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -425,10 +424,10 @@ section h2 {
   margin-bottom: 20px;
   letter-spacing: 2px;
   position: relative;
-  cursor: pointer; /* Change le curseur pour montrer qu'il est interactif */
+  cursor: pointer; 
 }
 
-/* Ligne sous le titre (initialement invisible) */
+
 section h2::after {
   content: '';
   display: block;
@@ -437,33 +436,32 @@ section h2::after {
   background: #00ffcc;
   margin: 10px auto 0;
   border-radius: 2px;
-  transition: width 0.3s ease-in-out; /* Animation douce */
+  transition: width 0.3s ease-in-out; 
 }
 
-/* Effet au survol : la ligne s'étend */
+
 section h2:hover::after {
-  width: 80px; /* La ligne s'agrandit */
+  width: 80px; 
 }
-/* Ajout d'un soulignement stylisé sous chaque titre */
+
 section h2::after {
-  width: 150px; /* Augmenté de 80px à 150px */
+  width: 150px; 
 }
 
-/* Effet au survol : la ligne s'étend */
+
 section h2:hover::after {
-  width: 200px; /* Augmenté pour un effet plus visible */
+  width: 200px; 
 }
 
-/* Augmenter la taille de "Contactez-moi via" sans le gras */
+
 #contact p[data-key="contactText"] {
-  font-size: 28px; /* Augmenter la taille du texte */
-  color: #fff; /* Assurer que le texte est bien en blanc */
-  margin-bottom: 20px; /* Ajouter un peu d'espace sous le texte */
+  font-size: 28px; 
+  color: #fff; 
+  margin-bottom: 20px; 
 }
 
-/* Ajout d'une lueur blanche sous chaque titre de section */
+
 section h2 {
-  /* Lueur blanche avec opacité réduite */
   text-shadow: 
     0 0 20px rgb(255, 255, 255), 
     0 0 30px rgba(255, 255, 255, 0.822), 
@@ -478,23 +476,22 @@ section h2:hover {
 }
 
 
-/* En-tête principal */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px 50px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)); /* Dégradé fluide */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)); 
   display: flex;
-  justify-content: space-between; /* Espacement entre le logo et le menu */
+  justify-content: space-between; 
   align-items: center;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre légère */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
-/* Logo stylisé - Prénom et Nom de famille à gauche */
+
 header .logo {
   font-size: 2rem;
   font-weight: 600;
@@ -505,20 +502,20 @@ header .logo {
   cursor: pointer;
 }
 
-/* Logo au survol */
+
 header .logo:hover {
-  color: #00ffcc; /* Bleu au survol */
+  color: #00ffcc;
 }
 
-/* Navigation principale */
+
 header nav {
   display: flex;
-  justify-content: flex-end; /* Aligne le menu à droite */
+  justify-content: flex-end; 
   align-items: center;
-  width: auto; /* Le menu prend la largeur nécessaire uniquement */
+  width: auto; 
 }
 
-/* Menu de navigation */
+
 header ul {
   list-style: none;
   display: flex;
@@ -526,7 +523,7 @@ header ul {
   margin: 0;
 }
 
-/* Liens du menu avec animations */
+
 header ul li {
   position: relative;
 }
@@ -542,14 +539,14 @@ header ul li a {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Effet au survol : Changer de couleur + légère élévation */
+
 header ul li a:hover {
-  color: #3498db; /* Bleu clair au survol */
-  transform: translateY(-3px); /* Élévation subtile */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre discrète */
+  color: #3498db; 
+  transform: translateY(-3px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
-/* Animation d'apparition des liens */
+
 header ul li a::after {
   content: '';
   position: absolute;
@@ -562,31 +559,31 @@ header ul li a::after {
   left: 50%;
 }
 
-/* Soulignement au survol */
+
 header ul li a:hover::after {
   width: 100%;
   left: 0;
 }
 
-/* --- En-tête avec un design fluide et moderne --- */
 
-/* En-tête principal */
+
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px 50px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)); /* Dégradé fluide */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)); 
   display: flex;
-  justify-content: space-between; /* Espacement entre le logo et le menu */
+  justify-content: space-between; 
   align-items: center;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre légère */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
-/* Logo stylisé - Prénom et Nom de famille à gauche */
+
 header .logo {
   font-size: 2rem;
   font-weight: 600;
@@ -597,17 +594,17 @@ header .logo {
   cursor: pointer;
 }
 
-/* Logo au survol */
+
 header .logo:hover {
-  color: #00ffcc; /* Bleu au survol */
+  color: #00ffcc; 
 }
 
-/* Navigation principale */
+
 header nav {
   display: flex;
-  justify-content: flex-end; /* Aligne le menu à droite */
+  justify-content: flex-end; 
   align-items: center;
-  width: auto; /* Le menu prend la largeur nécessaire uniquement */
+  width: auto; 
 }
 
 /* Menu de navigation */
@@ -618,7 +615,7 @@ header ul {
   margin: 0;
 }
 
-/* Liens du menu avec animations */
+
 header ul li {
   position: relative;
 }
@@ -634,14 +631,14 @@ header ul li a {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Effet au survol : Changer de couleur + légère élévation */
+
 header ul li a:hover {
-  color: #00ffcc; /* Bleu clair au survol */
-  transform: translateY(-3px); /* Élévation subtile */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre discrète */
+  color: #00ffcc; 
+  transform: translateY(-3px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
-/* Animation d'apparition des liens */
+
 header ul li a::after {
   content: '';
   position: absolute;
@@ -654,13 +651,13 @@ header ul li a::after {
   left: 50%;
 }
 
-/* Soulignement au survol */
+
 header ul li a:hover::after {
   width: 100%;
   left: 0;
 }
 
-/* Menu hamburger (mobile) */
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -675,7 +672,7 @@ header ul li a:hover::after {
   border-radius: 2px;
 }
 
-/* Style du menu sur mobile */
+
 @media (max-width: 768px) {
   header {
     padding: 15px 20px;
@@ -687,7 +684,7 @@ header ul li a:hover::after {
     top: 60px;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.9); /* Fond sombre */
+    background: rgba(0, 0, 0, 0.9); 
     flex-direction: column;
     gap: 20px;
     text-align: center;
@@ -704,11 +701,11 @@ header ul li a:hover::after {
   }
 
   header ul li a {
-    font-size: 1.5rem; /* Augmenter la taille des liens en mobile */
+    font-size: 1.5rem; 
   }
 }
 
-/* Animation d'apparition du menu mobile */
+
 @keyframes slideIn {
   0% {
     transform: translateY(-100%);
@@ -718,13 +715,13 @@ header ul li a:hover::after {
   }
 }
 
-/* Fond de l'en-tête au scroll */
+
 header.scrolled {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)); /* Transition au scroll */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* --- Style pour le bouton de sélection de langue --- */
+
 .language-switcher {
   display: flex;
   gap: 15px;
@@ -748,14 +745,14 @@ header.scrolled {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Effet sur le survol des boutons */
+
 .lang-btn:hover {
   background-color: #00ffcc;
   color: #fff;
   transform: scale(1.1);
 }
 
-/* Quand le bouton est sélectionné, donner un bord et une couleur différents */
+
 .lang-btn.selected {
   border-color: #00ffcc;
   background-color: #00ffcc;
@@ -768,7 +765,7 @@ header.scrolled {
   margin-right: 8px;
 }
 
-/* Animation pour agrandir légèrement lors du survol */
+
 .lang-btn:active {
   transform: scale(0.95);
 }
@@ -826,7 +823,7 @@ header.scrolled {
 }
 
 .gallery img:hover {
-  transform: scale(3); /* Zoom 3 fois plus grand */
+  transform: scale(3); 
 }
 
 
@@ -871,7 +868,7 @@ header.scrolled {
   font-weight: bold;
   margin: 20px 0 10px;
   text-align: center;
-  color: var(--primary-color); /* Ajuste selon ta palette */
+  color: var(--primary-color); 
 }
 .skill-logo {
   width: 50px;
@@ -879,43 +876,43 @@ header.scrolled {
   object-fit: contain;
   margin-bottom: 10px;
 }
-/* Positionnement relatif pour chaque skill-card */
+
 .skill-card {
   position: relative;
 }
 
-/* Style du tooltip */
+
 .tooltip {
   position: absolute;
-  bottom: 120%;         /* Positionné au-dessus du logo */
+  bottom: 120%;         
   left: 50%;
   transform: translateX(-50%);
-  background: #333;     /* Fond sombre */
-  color: #fff;          /* Texte en blanc */
+  background: #333;     
+  color: #fff;          
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.9rem;
   white-space: nowrap;
-  opacity: 0;           /* Invisible par défaut */
-  pointer-events: none; /* Pour éviter toute interférence avec le survol */
+  opacity: 0;           
+  pointer-events: none; 
   transition: opacity 0.3s ease, bottom 0.3s ease;
 }
 
-/* Affichage du tooltip au survol de la skill-card */
+
 .skill-card:hover .tooltip {
   opacity: 1;
-  bottom: 130%; /* Le tooltip monte légèrement */
+  bottom: 130%; 
 }
 
 .competence {
-  font-family: "Poppins", sans-serif; /* Remplace par la police souhaitée */
-  font-weight: bold; /* ou 600, 700 selon ton choix */
-  color: #fff; /* ou la couleur que tu utilises */
+  font-family: "Poppins", sans-serif; 
+  font-weight: bold; 
+  color: #fff; 
 }
 
 .skill-card h3,
 .skill-card p {
-    font-weight: bold; /* Met en gras le texte */
+    font-weight: bold; 
 }
 
 .skill-card {
@@ -924,21 +921,21 @@ header.scrolled {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 120px; /* Ajuste selon la taille des cartes */
-  width: 150px; /* Ajuste si nécessaire */
+  height: 120px; 
+  width: 150px; 
 }
 
 .skill-card h3,
 .skill-card p {
   font-weight: bold;
-  font-size: 16px; /* Uniformiser la taille du texte */
-  margin-top: 11.1px; /* Espacement entre l'icône et le texte */
+  font-size: 16px; 
+  margin-top: 11.1px; 
 }
 .skill-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; /* Assure l'alignement vertical */
+  align-items: center; 
 }
 
 .skill-card {
@@ -946,23 +943,23 @@ header.scrolled {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 120px; /* Assure une hauteur uniforme */
+  height: 120px; 
   width: 150px;
 }
 
 header nav ul {
   display: flex;
-  justify-content: center; /* Centre les éléments */
+  justify-content: center; 
   align-items: center;
   list-style: none;
   padding: 0;
-  margin: 0 auto; /* Centre horizontalement */
-  width: fit-content; /* Ajuste la largeur au contenu */
+  margin: 0 auto; 
+  width: fit-content; 
 }
 
 header nav {
   display: flex;
-  justify-content: space-between; /* Espace entre le logo et le menu */
+  justify-content: space-between; 
   align-items: center;
   padding: 10px 50px;
 }
@@ -970,67 +967,67 @@ header nav {
 header .logo {
   font-size: 24px;
   font-weight: bold;
-  margin-right: auto; /* Pousse le menu à droite */
+  margin-right: auto; 
 }
 
 h2[data-key="aboutTitle"] {
-  font-size: 3rem; /* Taille du titre */
+  font-size: 3rem; 
   font-weight: bold;
   text-shadow: 0 0 10px cyan;
   text-align: center;
 }
 
 p[data-key="aboutText"] {
-  font-size: 1.4rem; /* Taille du texte */
+  font-size: 1.4rem; 
   line-height: 1.8;
   text-align: center;
   max-width: 80%;
-  margin: 0 auto; /* Centrer le texte */
+  margin: 0 auto; 
 }
 
 h2[data-key="skillsTitle"] {
-  font-size: 3rem; /* Taille du titre */
+  font-size: 3rem; 
   font-weight: bold;
   text-shadow: 0 0 10px cyan;
   text-align: center;
 }
 
 p[data-key="skillsText"] {
-  font-size: 1.4rem; /* Taille du texte */
+  font-size: 1.4rem; 
   line-height: 1.8;
   text-align: center;
   max-width: 80%;
-  margin: 0 auto; /* Centrer le texte */
+  margin: 0 auto; 
 }
 
 h2[data-key="projectsTitle"] {
-  font-size: 3rem; /* Taille du titre */
+  font-size: 3rem; 
   font-weight: bold;
   text-shadow: 0 0 10px cyan;
   text-align: center;
 }
 
 p[data-key="projectsText"] {
-  font-size: 1.4rem; /* Taille du texte */
+  font-size: 1.4rem; 
   line-height: 1.8;
   text-align: center;
   max-width: 80%;
-  margin: 0 auto; /* Centrer le texte */
+  margin: 0 auto; 
 }
 
 h2[data-key="contactTitle"] {
-  font-size: 3rem; /* Taille du titre */
+  font-size: 3rem; 
   font-weight: bold;
   text-shadow: 0 0 10px cyan;
   text-align: center;
 }
 
 p[data-key="contactText"] {
-  font-size: 1.4rem; /* Taille du texte */
+  font-size: 1.4rem; 
   line-height: 1.8;
   text-align: center;
   max-width: 80%;
-  margin: 0 auto; /* Centrer le texte */
+  margin: 0 auto; 
 }
 
 .more-projects {
@@ -1041,16 +1038,16 @@ p[data-key="contactText"] {
   background: rgba(0, 255, 247, 0.1);
   color: #ffffff;
   font-size: 1.2rem;
-  margin-top: -20px; /* Rapproche la carte des autres */
-  width: 90%; /* Prend presque toute la largeur */
-  max-width: 800px; /* Évite qu'elle soit trop large sur grands écrans */
+  margin-top: -20px; 
+  width: 90%; 
+  max-width: 800px; 
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Menu burger */
+
 .burger-menu {
-  display: none; /* Caché sur desktop */
+  display: none; 
   cursor: pointer;
 }
 
@@ -1062,7 +1059,7 @@ p[data-key="contactText"] {
   transition: 0.4s;
 }
 
-/* Animation pour l'icône burger */
+
 .burger-menu.open div:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -1073,10 +1070,10 @@ p[data-key="contactText"] {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Menu navigation mobile */
+
 @media screen and (max-width: 768px) {
   .burger-menu {
-    display: block; /* Visible sur mobile */
+    display: block; 
     position: absolute;
     top: 20px;
     right: 20px;
@@ -1106,7 +1103,7 @@ p[data-key="contactText"] {
   }
 }
 
-/* Ajustement des sections */
+
 @media screen and (max-width: 768px) {
   section {
     padding: 20px;
@@ -1121,7 +1118,7 @@ p[data-key="contactText"] {
   }
 }
 
-/* Pour petits écrans (téléphones) */
+
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 20px;
@@ -1137,9 +1134,9 @@ p[data-key="contactText"] {
   }
 }
 
-/* Styles de base pour le menu */
+
 .burger-menu {
-  display: none; /* Caché par défaut */
+  display: none; 
   cursor: pointer;
   position: absolute;
   top: 20px;
@@ -1155,10 +1152,10 @@ p[data-key="contactText"] {
   transition: all 0.3s ease;
 }
 
-/* Styles pour afficher le menu sur mobile */
+
 @media screen and (max-width: 768px) {
   .burger-menu {
-    display: block; /* Affiché sur mobile */
+    display: block; 
   }
 
   .nav-links {
@@ -1174,7 +1171,7 @@ p[data-key="contactText"] {
   }
 
   .nav-links.active {
-    display: flex; /* Afficher quand actif */
+    display: flex; 
   }
 
   .nav-links a {
@@ -1184,7 +1181,7 @@ p[data-key="contactText"] {
   }
 }
 
-/* Menu burger - Caché sur PC */
+
 .burger-menu {
   display: none;
   flex-direction: column;
@@ -1203,29 +1200,100 @@ p[data-key="contactText"] {
   transition: all 0.3s ease;
 }
 
-/* Menu navigation - Version mobile */
+
+
 @media screen and (max-width: 768px) {
-  .burger-menu {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
     display: flex;
-  }
-
-  nav ul {
-    display: none; /* Caché par défaut */
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    background: rgba(0, 0, 0, 0.9);
     flex-direction: column;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    padding: 10px 0;
-  }
-
-  nav ul.active {
-    display: flex; /* Afficher quand actif */
-  }
-
-  nav ul li {
-    padding: 15px;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  nav,
+  .nav-links,
+  .burger-menu {
+    display: none !important;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2[data-key="skillsTitle"] {
+    font-size: 2rem; 
+    margin: 20px 0;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2[data-key="aboutTitle"] {
+    font-size: 2rem; 
+    margin: 20px 0;  
+    letter-spacing: 1px; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2[data-key="projectsTitle"],
+  h2[data-key="contactTitle"] {
+    font-size: 2rem;      
+    margin: 20px 0;      
+    letter-spacing: 1px;  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2[data-key="contactTitle"] {
+    font-size: 2rem;
+    margin: 20px 0;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p[data-key="aboutText"] {
+    font-size: 1rem;      
+    line-height: 1.5;     
+    max-width: 90%;       
+    margin: 0 auto;       
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  p[data-key="contactText"] {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  
+  .contact-info p,
+  .contact-info li {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  
+  .contact-info i {
+    font-size: 1.2rem;
+  }
+}
+
+
