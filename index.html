@@ -3,141 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio Kenza Hidouche</title>
+  <title data-key="title">Portfolio Kenza Hidouche</title>
 
-  <!-- Google Fonts + FontAwesome -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 
-  <!-- Particles.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feuille de style -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Particules en arrière-plan -->
   <div id="particles-js"></div>
 
-  <!-- Bouton Dark/Light (optionnel) -->
-  <button id="themeToggle" class="theme-toggle">
-    <i class="fas fa-adjust"></i>
-  </button>
-
-  <!-- Navigation (fixe en haut) -->
   <header>
-    <nav class="navbar">
-      <div class="logo">Kenza Hidouche</div>
-      <ul class="nav-links">
+    <div class="logo">Kenza Hidouche</div>
+    
+    <div class="burger-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+    <nav>
+      <ul>
         <li><a href="#home" data-key="home">Accueil</a></li>
         <li><a href="#about" data-key="about">À propos</a></li>
         <li><a href="#skills" data-key="skills">Compétences</a></li>
         <li><a href="#projects" data-key="projects">Projets</a></li>
         <li><a href="#contact" data-key="contact">Contact</a></li>
       </ul>
-      <div class="nav-buttons">
-        <button id="langToggle" class="lang-toggle">FR</button>
-        <button id="themeToggle" class="theme-toggle">🌙</button>
-      </div>
     </nav>
+  
+    <div class="language-switcher">
+      <button class="lang-btn" id="fr">FR</button>
+      <button class="lang-btn" id="en">EN</button>
+    </div>
   </header>
   
-  
-  
 
-  <!-- Section Hero (Accueil) -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1 class="kenza-glitch">Kenza Hidouche</h1>
-      <p class="tagline">Terminal Sti2d</p>
-      <a href="#about" class="cta-btn">Découvrir</a>
+      <h1 class="kenza-glitch" data-key="name">Kenza Hidouche</h1>
+      <p class="tagline" data-key="tagline">Terminale STI2D</p>
+      <a href="#about" class="cta-btn" data-key="cta">Découvrir</a>
     </div>
   </section>
 
- <!-- Section À propos -->
-<section id="about" class="hidden">
-  <h2 data-key="aboutTitle">À propos de moi</h2>
-  <p data-key="aboutText">
-    Depuis mon plus jeune âge, je suis passionné par l'informatique. Les jeux vidéo ont été l'une de mes premières portes d'entrée vers un univers où l'informatique et la technologie se rassemble. Au fil des années, j'ai compris que l'informatique est bien plus qu'un simple outil, c'est l'avenir. L'informatique est devenu notre quotidien, que ce soit à travers les médias, la technologie ou les interactions numériques, je crois fermement que l'informatique est la clé qui nous permet de progresser.
-  </p>
-</section>
-
-
-  <!-- Section Compétences -->
-<section id="skills" class="hidden">
-    <h2>Mes Compétences</h2>
-    <div class="skill-list">
-      <div class="skill-card">
-        <i class="fab fa-html5"></i>
-        <h3>HTML</h3>
-      </div>
-      <div class="skill-card">
-        <i class="fab fa-js"></i>
-        <h3>JavaScript</h3>
-      </div>
-      <div class="skill-card">
-        <i class="fab fa-css3-alt"></i>
-        <h3>CSS</h3>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-code"></i>
-        <h3>C#</h3>
-      </div>
-      <div class="skill-card">
-        <i class="fab fa-python"></i>
-        <h3>Python</h3>
+  <section id="about" class="hidden">
+    <h2 data-key="aboutTitle">À propos de moi</h2>
+    <p data-key="aboutText">
+      Bonjour, je m'appelle Kenza Hidouche et je suis en Terminale STI2D. Passionnée par la programmation, la 3D, le graphisme et je porte un interêt à l'audiovisuelle. Ce portfolio présente mes projets et mon parcours, N'hésite pas à me contacter pour échanger ! 
+    </p>
+  </section>
+  <section id="skills" class="hidden">
+    <h2 data-key="skillsTitle">Mes Compétences</h2>
+  
+    <div class="category">
+      <h3 class="skill-category" data-key="development">Développement</h3>
+      <div class="skill-list">
+        <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML</h3></div>
+        <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
+        <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+        <div class="skill-card"><i class="fas fa-code"></i><h3>C#</h3></div>
+        <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3></div>
+        <div class="skill-card"><img src="C++.png" alt="C++ Logo" class="skill-logo" /><h3>C++</h3></div>
       </div>
     </div>
-  </section>
+    
+    <div class="category">
+      <h3 class="skill-category" data-key="graphics">Graphisme</h3>
+      <div class="skill-list">
+        <div class="skill-card"><img src="PhotoShop.png" alt="Photoshop Logo" class="skill-logo" /><p>Photoshop</p></div>
+        <div class="skill-card"><img src="Ibis Paint X.png" alt="Ibis Paint Logo" class="skill-logo" /><p>Ibis Paint</p></div>
+      </div>
+    </div>
+    
+    <div class="category">
+      <h3 class="skill-category" data-key="algorithmics">Algorithmique & Modélisation</h3>
+      <div class="skill-list">
+        <div class="skill-card"><i class="fas fa-cogs"></i><h3>Simulateur Algorithme</h3></div>
+        <div class="skill-card"><img src="Blender.png" alt="Blender Logo" class="skill-logo" /><p>Blender</p></div>
+      </div>
+    </div>
+    
+  
+  
+  
   
 
-  <!-- Section Projets -->
-<section id="projects" class="hidden">
-  <h2>Mes Projets</h2>
-  <div class="project-list">
+  
+  <section id="projects" class="hidden">
+    <h2 data-key="projectsTitle">Mes Projets</h2>
+    <div class="project-list">
       <div class="project-card">
-          <h3>Hexapode</h3>
-          <p>Robot Hexapode conçu pour explorer, analyser le terrain et franchir des obstacles.</p>
-          <a href="https://www.canva.com/design/DAGEdxudA_Q/z59n-F2l0iqGifleW5QAvw/edit" class="discover-btn">Découvrir</a>
+        <h3 data-key="project1">Hexapode</h3>
+        <p data-key="project1Desc">Le robot à six pattes est conçu pour explorer des endroits inaccessibles pour l'homme en cas de situation apocalyptique ou autre</p>
+        <a href="https://www.canva.com/design/DAGEdxudA_Q/z59n-F2l0iqGifleW5QAvw/edit" class="discover-btn" data-key="discover">Découvrir</a>
       </div>
       <div class="project-card">
-          <h3>Portfolio Animé</h3>
-          <p>Site web interactif utilisant des animations CSS et JavaScript pour une expérience immersive.</p>
-          <a href="lien_du_projet_2" class="discover-btn">Découvrir</a>
+        <h3 data-key="project2">Mon Jeu Vidéo</h3>
+        <p data-key="project2Desc">Time Tempest est un jeu où vous incarnez Neyth, un voyageur temporel chargé de corriger des distorsions historiques</p>
+        <a href="projets/jeu-video.html" class="discover-btn" data-key="discover">Découvrir</a>
       </div>
       <div class="project-card">
-          <h3>//</h3>
-          <p>//</p>
-          <a href="lien_du_projet_3" class="discover-btn">Découvrir</a>
+        <h3 data-key="project3">Mon site</h3>
+        <p data-key="project3Desc">Conception d'un site culinaire avec des images et des liens vers différentes recettes, ainsi que des fonctionnalités interactives</p>
+        <a href="https://ryuwou.github.io/KenFood/" class="discover-btn" data-key="discover">Découvrir</a>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
+  <div class="project-card more-projects">
+    <h3 data-key="moreProjectsTitle">Et bien plus encore !</h3>
+    <p data-key="moreProjectsText">Certains projets sont encore en cours de développement.</p>
+</div>
 
- <!-- Section Contact -->
-<section id="contact" class="hidden">
-    <h2>Contactez-moi</h2>
-    <p>Vous pouvez me joindre via :</p>
+  
+
+  <section id="contact" class="hidden">
+    <h2 data-key="contactTitle">Contactez-moi</h2>
+    <!-- Modification ici pour augmenter la taille du texte -->
+    <p data-key="contactText">Vous pouvez me joindre via :</p>
     <ul class="contact-info">
-        <li><i class="fas fa-envelope"></i> Email : <a href="Kenza.hidouche.scol@gmail.com">Kenza.hidouche.scol@gmail.com</a></li>
-        <li><i class="fas fa-phone"></i> Téléphone : <a href="tel:+33 7 83 76 90 40">+33 7 83 76 90 40</a></li>
-
+      <p><i class="fas fa-envelope"></i> <span data-key="emailLabel">Email</span>: <span id="email">Kenza.hidouche.scol@gmail.com</span></p>
+      <p><i class="fas fa-phone"></i> <span data-key="phoneLabel">Téléphone</span>: <span id="phone">+33 7 83 76 90 40</span></p>      
     </ul>
-</section>
+  </section>
 
-
-  <!-- Pied de page -->
   <footer>
-    <p>© 2025 Kenza Hidouche - Tous droits réservés</p>
+    <p data-key="footer">© 2025 Kenza Hidouche - Tous droits réservés</p>
   </footer>
 
-  <!-- Script JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.1/i18next.min.js"></script>
   <script src="script.js"></script>
+
+  
 </body>
-</html><meta name="viewport" content="width=device-width, initial-scale=1.0">
+</html>
+
+
+
+
+
+
+
